@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: #222;
+    border: 2px solid #fff;
+}
+
+.paddle {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: #fff;
+}
+
+#paddle-left {
+    left: 10px;
+    top: 160px;
+}
+
+#paddle-right {
+    right: 10px;
+    top: 160px;
+}
+
+.ball {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 192.5px;
+    left: 392.5px;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
